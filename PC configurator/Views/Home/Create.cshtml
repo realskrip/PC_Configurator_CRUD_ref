@@ -1,0 +1,48 @@
+﻿@model PC_configurator.Models.SystemUnit
+
+<h2>Добавление конфигурации</h2>
+<form asp-action="create" asp-controller="home">
+    <p>
+        <label asp-for="CPU">Процессор</label><br />
+        <input type="text" asp-for="CPU" />
+    </p>
+    <p>
+        <label asp-for="ComputerCase">Корпус</label><br />
+        <input type="text" asp-for="ComputerCase" />
+    </p>
+    <p>
+        <label asp-for="Motherboard">Материнская плата</label><br />
+        <input type="text" asp-for="Motherboard" />
+    </p>
+    <p>
+        <label asp-for="GPU">Видеокарта</label><br />
+        <input type="text" asp-for="GPU" />
+    </p>
+    <p>
+        <label asp-for="CPUcooler">Охлаждение процессора</label><br />
+        <input type="text" asp-for="CPUcooler" />
+    </p>
+    <p>
+        <label asp-for="RAM">Оперативная память</label><br />
+        <input type="text" asp-for="RAM" />
+    </p>
+    <p>
+        <label asp-for="HDD">HDD</label><br />
+        <input type="text" asp-for="HDD" />
+    </p>
+    <p>
+        <label asp-for="SSD">SSD</label><br />
+        <input type="text" asp-for="SSD" />
+    </p>
+    <p>
+        <label asp-for="PowerSupply">Блок питания</label><br />
+        <input type="text" asp-for="PowerSupply" />
+    </p>
+    <p>
+        <label asp-for="SoundСard">Звуковая карта</label><br />
+        <input type="text" asp-for="SoundСard" />
+    </p>
+    <p>
+        <input type="submit" value="Отправить" />
+    </p>
+</form>

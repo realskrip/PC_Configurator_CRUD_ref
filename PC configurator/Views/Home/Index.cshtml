@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PC_configurator.Models.SystemUnit>
+
+<h2>Желаемые комплектующие</h2>
+<p><a asp-action="Create">Добавить комплектующие</a></p>
+<table class="table">
+    <tr><th>Процессор</th><th>Корпус</th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CPU</td>
+            <td>@item.ComputerCase</td>
+        </tr>
+    }
+</table>
