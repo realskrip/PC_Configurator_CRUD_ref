@@ -1,0 +1,16 @@
+﻿@model PC_configurator.Models.SystemUnit
+
+<h2>Редактирование данных</h2>
+<form asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
+    <p>
+        <label asp-for="CPU">Процессор</label><br />
+        <input type="text" asp-for="CPU" />
+    </p>
+    <p>
+        <label asp-for="ComputerCase">Корпус</label><br />
+        <input type="text" asp-for="ComputerCase" />
+    </p>
+    <p>
+        <input type="submit" value="Сохранить" />
+    </p>
+</form>
