@@ -4,7 +4,6 @@ C#
 ASP.NET Core MVC
 Git
 HTML
-CSS
 SQL
 Razor Pages
 Nuget
